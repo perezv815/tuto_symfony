@@ -1,3 +1,6 @@
-event_homepage:
-    path:  /Yo/{name}/{count}
-    defaults: { _controller: EventBundle:Default:index }
+_default_import:   #Ican name this tag like I want but it must be unique
+         resource : "routing/default.yml"
+
+EventBundle_event:
+        resource: "@EventBundle/Resources/config/routing/event.yml"
+        prefix:   /event
