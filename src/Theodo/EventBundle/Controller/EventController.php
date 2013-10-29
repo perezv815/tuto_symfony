@@ -86,6 +86,13 @@ class EventController extends Controller
      */
     public function newAction()
     {
+
+       /* $securityContext = $this->container->get('security.context');
+        if (!$securityContext->isGranted('ROLE_ADMIN')) {
+            throw new AccessDeniedException('Only an admin can do this!!!!');
+        }*/
+
+
         $entity = new Event();
         $form   = $this->createCreateForm($entity);
 

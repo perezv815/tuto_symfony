@@ -4,3 +4,9 @@ _default_import:   #Ican name this tag like I want but it must be unique
 EventBundle_event:
         resource: "@EventBundle/Resources/config/routing/event.yml"
         prefix:   /event
+
+
+#redirect home page on event
+bob :
+    pattern : /
+    defaults: { _controller: "EventBundle:Event:index" }
